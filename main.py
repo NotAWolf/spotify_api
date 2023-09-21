@@ -6,8 +6,8 @@ from selenium.webdriver.common.keys import Keys
 
 # авторизация в spotify
 def autorisation():
-    client_id = '52bd31fd49ac4cbbb3b7be8b0fc6c30b'
-    client_secret = '1a5576844d4149dcb5d1d6f7f749f46b'
+    client_id = ''
+    client_secret = ''
     scope = ('user-library-read, playlist-read-private, playlist-modify-private, playlist-modify-public, user-read-private, user-library-modify, user-library-read')
     redirect_uri = 'http://localhost:8888/callback/'
     sp_oauth = oauth2.SpotifyOAuth(client_id, client_secret, redirect_uri, scope=scope)
